@@ -1,0 +1,18 @@
+{
+  "name": "worker",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts",
+    "bootstrap:proshop-session": "tsx src/bootstrap-proshop-session.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@proshopper/core": "workspace:*",
+    "bullmq": "^5.45.1",
+    "ioredis": "^5.5.0",
+    "playwright": "^1.51.1",
+    "zod": "^3.24.2"
+  }
+}

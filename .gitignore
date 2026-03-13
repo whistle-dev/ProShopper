@@ -1,0 +1,17 @@
+node_modules
+.pnpm-store
+.next
+dist
+coverage
+.turbo
+.DS_Store
+.env
+.env.local
+.env.*.local
+playwright-report
+test-results
+*.tsbuildinfo
+apps/web/.next
+apps/web/node_modules
+apps/worker/node_modules
+packages/core/node_modules

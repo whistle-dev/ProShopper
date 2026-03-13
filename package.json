@@ -1,0 +1,23 @@
+{
+  "name": "proshopper",
+  "private": true,
+  "packageManager": "pnpm@9.14.2",
+  "scripts": {
+    "dev:web": "pnpm --filter web dev",
+    "dev:worker": "pnpm --filter worker dev",
+    "build": "pnpm --filter @proshopper/core typecheck && pnpm --filter worker typecheck && pnpm --filter web build",
+    "typecheck": "pnpm --filter @proshopper/core typecheck && pnpm --filter worker typecheck && pnpm --filter web typecheck",
+    "test": "pnpm --filter @proshopper/core test",
+    "db:generate": "drizzle-kit generate",
+    "db:push": "drizzle-kit push"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "drizzle-kit": "^0.31.4",
+    "tsx": "^4.20.6",
+    "typescript": "^5.8.2",
+    "vitest": "^3.1.1"
+  }
+}
